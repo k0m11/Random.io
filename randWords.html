@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randoms</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
+    <link rel="stylesheet" href="static/styles/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Randoms</a>
+            <div class="nav-list">
+                <a href="#">Random Letters</a>
+                <a href="index.html">Random Numbers</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="container">
+            <p>Random Letter Generator</p>  
+            <input id="range" type="range" value="1" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
+            <output id="rangeRes">0</output>
+            <p></p>
+            <button id="generate" onclick="Start()">Generate</button>
+            <p id="result"></p>
+        </div>
+    </div>
+
+
+
+    <script src="static/js/words.js"></script>
+</body>
+</html>
